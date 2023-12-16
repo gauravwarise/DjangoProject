@@ -1,22 +1,37 @@
-{% extends 'base.html' %}
+<form id="authForm">
+    <!-- Email input -->
+    <div class="form-outline mb-4">
+        <input type="email" id="form1Example13" class="form-control form-control-lg" autocomplete="username" />
+        <label class="form-label" for="form1Example13">Email address</label>
+    </div>
 
-{% block title %}
-{% endblock %}
+    <!-- Password input -->
+    <div class="form-outline mb-4">
+        <input type="password" id="form1Example23" class="form-control form-control-lg" autocomplete="current-password" />
+        <label class="form-label" for="form1Example23">Password</label>
+    </div>
+
+    <!-- Confirm Password input -->
+    <div class="form-outline mb-4">
+        <input type="password" id="form1Example33" class="form-control form-control-lg" autocomplete="current-password" />
+        <label class="form-label" for="form1Example33">Confirm Password</label>
+    </div>
+
+    <!-- Submit button -->
+    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submitButton">Sign Up</button>
+    <button type="button" class="btn btn-primary btn-lg btn-block" id="toggleSignIn">Sign In</button>
+    
+    <!-- Move the event listener registration inside the 'toggleSignUp' click event -->
+    <button type="button" class="btn btn-link" id="toggleForm">Forgot password?</button>
 
 
-{% block css %}
-<style>
+    <div class="divider d-flex align-items-center my-4">
+        <p class="text-center fw-bold mx-3 mb-0 text-muted">OR</p>
+    </div>
 
-</style>
-{% endblock %}
-
-
-{% block body %}
-{% load static %}
-
-
-
-<script>
-
-</script>
-{% endblock %}
+    <a class="btn btn-primary btn-lg btn-block" style="background-color: #3b5998" href="#!" role="button">
+        <i class="fab fa-facebook-f me-2"></i>Continue with Facebook
+    </a>
+    <a class="btn btn-primary btn-lg btn-block" style="background-color: #55acee" href="#!" role="button">
+        <i class="fab fa-twitter me-2"></i>Continue with Twitter</a>
+</form>
